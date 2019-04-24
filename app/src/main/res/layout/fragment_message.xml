@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MessageFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="false"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_message" />
+
+    <EditText
+        android:id="@+id/tvMsg"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="550dp"
+        android:ems="10"
+        android:hint="Type Your Msg Here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="550dp"
+        android:background="@color/colorPrimary"
+        android:text="Send"
+        android:textColor="#FFFFFF" />
+
+</FrameLayout>

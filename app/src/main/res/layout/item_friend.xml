@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/friendPic"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_action_account_circle_40" />
+
+    <TextView
+        android:id="@+id/friendName"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="65dp"
+        android:gravity="center_vertical"
+        tools:text="Name" />
+
+    <ImageView
+        android:id="@+id/friendAdd"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="300dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/add" />
+
+    <ImageView
+        android:id="@+id/sendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="270dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/message" />
+
+</android.support.v7.widget.CardView>
